@@ -1,3 +1,3 @@
 # ruya
  
-Exciting project description is coming shorty :)
+Exciting project description is coming shortly :)
