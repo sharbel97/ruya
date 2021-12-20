@@ -2,10 +2,10 @@ import cv2
 
 # Access video device/webcam
 camera = cv2.VideoCapture(0)
-# camera.open('https://192.168.0.30:8080/video')
 camera.set(3,1280)
 camera.set(4,720)
 camera.set(10,70)
+camera.open('https://192.168.0.30:8080/video')
 
 classNames = []
 classFile = 'labels.names'
