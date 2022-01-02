@@ -20,7 +20,7 @@ int main(int argc, const char * argv[]) {
     // insert code here...
     cout << "Hello, World!\n";
     
-    Mat color = imread("/resources/selfie.JPG");
-    Mat gray = imread("/resources/selfie.JPG", IMREAD_GRAYSCALE);
+    Mat color = imread("/resources/selfie.jpeg");
+    Mat gray = imread("/resources/selfie.jpeg", IMREAD_GRAYSCALE);
     return 0;
 }
