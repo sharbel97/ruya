@@ -138,6 +138,7 @@
 		BB31E3142782651A003ABACA /* libopencv_core.4.5.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_core.4.5.4.dylib; path = ../../../../../../../usr/local/Cellar/opencv/4.5.4_1/lib/libopencv_core.4.5.4.dylib; sourceTree = "<group>"; };
 		BB31E3152782651A003ABACA /* libopencv_xfeatures2d.4.5.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_xfeatures2d.4.5.4.dylib; path = ../../../../../../../usr/local/Cellar/opencv/4.5.4_1/lib/libopencv_xfeatures2d.4.5.4.dylib; sourceTree = "<group>"; };
 		BB31E34E278265C0003ABACA /* ruya.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ruya.entitlements; sourceTree = "<group>"; };
+		BB31E35227826DD3003ABACA /* resources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = resources; path = ../../../../../../Desktop/resources; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,6 +283,7 @@
 		BB31E2D427825FE0003ABACA /* ruya */ = {
 			isa = PBXGroup;
 			children = (
+				BB31E35227826DD3003ABACA /* resources */,
 				BB31E34E278265C0003ABACA /* ruya.entitlements */,
 				BB31E2D527825FE0003ABACA /* main.cpp */,
 			);

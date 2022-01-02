@@ -11,16 +11,25 @@
 using namespace std;
 
 // OpenCV includes
-#include "opencv2/opencv.hpp"
+#include "opencv2/core.hpp"
 #include "opencv2/highgui.hpp"
 using namespace cv;
 
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
     cout << "Hello, World!\n";
     
-    Mat color = imread("/resources/selfie.jpeg");
-    Mat gray = imread("/resources/selfie.jpeg", IMREAD_GRAYSCALE);
+    Mat color = imread("/Users/sharbster/Desktop/resources/car.jpg");
+    
+    if (!color.data) {
+        cout << "Could not open or find image" << endl;
+        return -1;
+    }
+    
+    // show images
+    imshow("Benz Color", color);
+    
+    // wait for any key press
+    waitKey(0);
     return 0;
 }
