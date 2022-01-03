@@ -2,7 +2,7 @@
 //  main.cpp
 //  ruya
 //
-//  Created by sharbster on 1/2/22.
+//  Created by Sharbel on 1/2/22.
 //
 
 #include <iostream>
