@@ -11,57 +11,37 @@
 using namespace std;
 
 // OpenCV includes
-#include "opencv2/opencv.hpp"
+#include "opencv2/core.hpp"
 #include "opencv2/highgui.hpp"
 using namespace cv;
 
+// Create a variable to save the position value in track
+int blurAmount=15;
+
+// Trackbar call back function
+void onChange(int pos, void* userInput);
+
+//Mouse callback
+void onMouse(int event, int x, int y, int, void* userInput);
 
 int main(int argc, const char * argv[]) {
     cout << "Hello, World!\n";
     
-    const char* keys =
-    {
-        "{help h usage ? | | print this message}"
-        "{@video | | Video file, if not defined try to use webcamera}"
-    };
+    string image = "/Users/sharbster/Desktop/resources/car.jpg";
+    
+    namedWindow("Car",1);
+    // create a trackbar
+    createTrackbar("Self", "Video", &blurAmount, 30, onChange, &image);
+    setMouseCallback("Video", onMouse, &image);
+    
+    // call to onChange to init
+    onChange(blurAmount, &image);
+    
+    // wait
+    waitKey(0);
+    
+    destroyWindow("Car");
     
     
-    CommandLineParser parser(argc, argv, keys);
-    
-    //If requires help show
-    if (parser.has("help")) {
-        parser.printMessage();
-        return 0;
-    }
-    
-    String videoFile= parser.get<String>(0);
-    
-    // Check if params are correctly parsed in his variables
-    if (!parser.check()) {
-    parser.printErrors();
-    return 0;
-    }
-    
-    // open the default camera
-    VideoCapture cap;
-    if(videoFile != "")
-        cap.open(videoFile);
-    else
-        cap.open(0);
-    
-    if(!cap.isOpened()) // check if we succeeded
-        return -1;
-    
-    namedWindow("Video",1);
-    for(;;) {
-        Mat frame;
-        cap >> frame; // get a new frame from camera
-        if(frame.data)
-            imshow("Video", frame);
-        if(waitKey(30) >= 0) break;
-    }
-    
-    // Release the camera or video cap
-    cap.release();
     return 0;
 }
