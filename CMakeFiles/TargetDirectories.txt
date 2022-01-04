@@ -1,0 +1,3 @@
+/Users/sharbster/Documents/GitHub/computer-vision/ruya/CMakeFiles/ruya.dir
+/Users/sharbster/Documents/GitHub/computer-vision/ruya/CMakeFiles/edit_cache.dir
+/Users/sharbster/Documents/GitHub/computer-vision/ruya/CMakeFiles/rebuild_cache.dir
