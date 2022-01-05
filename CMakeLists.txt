@@ -1,10 +1,16 @@
-cmake_minimum_required (VERSION 3.0) 
-project (ruya)
-find_package(OpenCV REQUIRED)
+    cmake_minimum_required (VERSION 3.0)
+    cmake_policy(SET CMP0012 NEW)
+    project (ruya)
 
-set(CMAKE_CXX_STANDARD 11)
-set(CMAKE_CXX_STANDARD_REQUIRED True)
+# Opencv Package required
+    find_package(OpenCV REQUIRED)
+    MESSAGE("OpenCV version : ${OpenCV_VERSION}")
 
-include_directories($(OpenCV_INCLUDE_DIRS))
-add_executable(${PROJECT_NAME} main.cpp)
-target_link_libraries(ruya $ (OpenCV_LIBS))
+
+# add opencv header files to project
+    include_directories(${OpenCV_INCLUDE_DIR})
+    link_directories(${OpenCV_LIB_DIR})
+
+# generate our new executable
+    add_executable(${PROJECT_NAME} main.cpp)
+    target_link_libraries(ruya $(OpenCV_LIBS))
