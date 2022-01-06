@@ -17,6 +17,7 @@ int main(int argc, const char * argv[]) {
     cout << "Hello, World!\n";
 
     Mat color = imread("car.jpg");
-    
+    imshow("Car", color);
+    waitKey(0);
     return 0;
 }
