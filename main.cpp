@@ -9,13 +9,14 @@
 using namespace std;
 
 // OpenCV includes
-#include "opencv2/opencv.hpp"
-#include "opencv2/highgui.hpp"
+#include <opencv2/opencv.hpp>
 using namespace cv;
 
 
 int main(int argc, const char * argv[]) {
     cout << "Hello, World!\n";
+
+    Mat color = imread("car.jpg");
     
     return 0;
 }
