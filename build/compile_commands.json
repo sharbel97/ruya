@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/Users/sharbel/Documents/GitHub/computer-vision/ruya/build",
-  "command": "/usr/local/bin/x86_64-apple-darwin20-g++-11  -isystem /usr/local/Cellar/opencv/4.5.4_2/include/opencv4 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -std=c++17 -o CMakeFiles/ruya.dir/main.cpp.o -c /Users/sharbel/Documents/GitHub/computer-vision/ruya/main.cpp",
-  "file": "/Users/sharbel/Documents/GitHub/computer-vision/ruya/main.cpp"
-}
-]

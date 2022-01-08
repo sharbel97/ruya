@@ -73,15 +73,15 @@ CMakeFiles/ruya.dir/main.cpp.o: CMakeFiles/ruya.dir/flags.make
 CMakeFiles/ruya.dir/main.cpp.o: ../main.cpp
 CMakeFiles/ruya.dir/main.cpp.o: CMakeFiles/ruya.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sharbel/Documents/GitHub/computer-vision/ruya/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ruya.dir/main.cpp.o"
-	/usr/local/bin/x86_64-apple-darwin20-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ruya.dir/main.cpp.o -MF CMakeFiles/ruya.dir/main.cpp.o.d -o CMakeFiles/ruya.dir/main.cpp.o -c /Users/sharbel/Documents/GitHub/computer-vision/ruya/main.cpp
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ruya.dir/main.cpp.o -MF CMakeFiles/ruya.dir/main.cpp.o.d -o CMakeFiles/ruya.dir/main.cpp.o -c /Users/sharbel/Documents/GitHub/computer-vision/ruya/main.cpp
 
 CMakeFiles/ruya.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ruya.dir/main.cpp.i"
-	/usr/local/bin/x86_64-apple-darwin20-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sharbel/Documents/GitHub/computer-vision/ruya/main.cpp > CMakeFiles/ruya.dir/main.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sharbel/Documents/GitHub/computer-vision/ruya/main.cpp > CMakeFiles/ruya.dir/main.cpp.i
 
 CMakeFiles/ruya.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ruya.dir/main.cpp.s"
-	/usr/local/bin/x86_64-apple-darwin20-g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sharbel/Documents/GitHub/computer-vision/ruya/main.cpp -o CMakeFiles/ruya.dir/main.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sharbel/Documents/GitHub/computer-vision/ruya/main.cpp -o CMakeFiles/ruya.dir/main.cpp.s
 
 # Object files for target ruya
 ruya_OBJECTS = \

@@ -77,6 +77,8 @@ CMakeFiles/ruya.dir/main.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/cstring
  /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/string.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/string.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_rsize_t.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_errno_t.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/strings.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/utility
  /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__tuple
@@ -217,8 +219,6 @@ CMakeFiles/ruya.dir/main.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_nlink_t.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_useconds_t.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_suseconds_t.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_rsize_t.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_errno_t.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_def.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_setsize.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_fd_set.h
@@ -232,6 +232,7 @@ CMakeFiles/ruya.dir/main.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__bsd_locale_defaults.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/bitset
  /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__bit_reference
+ /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/sstream
  /usr/local/Cellar/opencv/4.5.4_2/include/opencv4/opencv2/opencv.hpp
  /usr/local/Cellar/opencv/4.5.4_2/include/opencv4/opencv2/opencv_modules.hpp
  /usr/local/Cellar/opencv/4.5.4_2/include/opencv4/opencv2/core.hpp
@@ -271,7 +272,6 @@ CMakeFiles/ruya.dir/main.cpp.o
  /usr/local/Cellar/opencv/4.5.4_2/include/opencv4/opencv2/core/operations.hpp
  /usr/local/Cellar/opencv/4.5.4_2/include/opencv4/opencv2/core/cvstd.inl.hpp
  /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/complex
- /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/sstream
  /usr/local/Cellar/opencv/4.5.4_2/include/opencv4/opencv2/core/utility.hpp
  /usr/local/Cellar/opencv/4.5.4_2/include/opencv4/opencv2/core/optim.hpp
  /usr/local/Cellar/opencv/4.5.4_2/include/opencv4/opencv2/core/ovx.hpp
