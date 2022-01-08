@@ -40,12 +40,12 @@ int main(int argc, const char * argv[]) {
         return -1;
     }
 
-    namedWindow("Car");
+    namedWindow("Blur");
 
     // Create window
-    createTrackbar("Car", "Car", &blurAmount, 30, onChange, &frame);
+    createTrackbar("Blur", "Blur", &blurAmount, 30, onChange, &frame);
 
-    setMouseCallback("Car", onMouse, &frame);
+    setMouseCallback("Blur", onMouse, &frame);
     onChange(blurAmount, &frame);
     waitKey(0);
 
@@ -66,7 +66,7 @@ static void onChange(int pos, void* userInput) {
     blur(*img, imgBlur, Size(pos, pos));
 
     // show the result
-    imshow("Car", imgBlur);
+    imshow("Blur", imgBlur);
 }
 
 static void onMouse(int event, int x, int y, int, void* userInput) {
