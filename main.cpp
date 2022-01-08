@@ -16,13 +16,13 @@ using namespace std;
 #include <opencv2/highgui.hpp>
 using namespace cv;
 
-// int blurAmount = 15;
+int blurAmount = 15;
 
-// // Trackbar callback function
-// void onChange(int pos, void* userInput);
+// Trackbar callback function
+static void onChange(int pos, void* userInput);
 
-// // Mouse callback
-// void onMouse(int event, int x, int y, int, void* userInput);
+// Mouse callback
+static void onMouse(int event, int x, int y, int, void* userInput);
 
 Mat frame;
 
@@ -40,11 +40,46 @@ int main(int argc, const char * argv[]) {
         return -1;
     }
 
-    // Create window
-    imshow("img" ,frame);
+    namedWindow("Car");
 
+    // Create window
+    createTrackbar("Car", "Car", &blurAmount, 30, onChange, &frame);
+
+    setMouseCallback("Car", onMouse, &frame);
+    onChange(blurAmount, &frame);
     waitKey(0);
 
     destroyAllWindows();
     return 0;
+}
+
+static void onChange(int pos, void* userInput) {
+    if (pos <= 0) return;
+
+    // Aux variable for result
+    Mat imgBlur;
+
+    // Get the pointer input image
+    Mat* img = (Mat*)userInput;
+
+    // Apply blur filter
+    blur(*img, imgBlur, Size(pos, pos));
+
+    // show the result
+    imshow("Car", imgBlur);
+}
+
+static void onMouse(int event, int x, int y, int, void* userInput) {
+    if (event != EVENT_LBUTTONDOWN) {
+        return;
+    }
+
+    // Get the pointer input image
+    Mat* img = (Mat*)userInput;
+
+    // Draw circle
+    circle(*img, Point(x, y), 10, Scalar(0,255,0), 3);
+
+    // Call onChange to get blurred image
+    onChange(blurAmount, img);
 }
