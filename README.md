@@ -4,7 +4,7 @@ Ruya is a Computer Vision project geared towards autonomous vehicles software. "
 
 System information (version)
 OpenCV => 4.5.4
-Operating System / Platform => macOS Big Sur 11.6.2, 64 Bit
+Operating System / Platform => Intel macOS Big Sur 11.6.2, 64 Bit.
 Compiler => gcc-11, local
 
 Dependencies:
