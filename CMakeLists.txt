@@ -15,7 +15,7 @@
     find_package(OpenCV REQUIRED)
     MESSAGE("OpenCV version : ${OpenCV_VERSION}")
 
-    include_directories(${OpenCV_INCLUDE_DIRS})
+    include_directories(${OpenCV_INCLUDE_DIR})
     link_directories(${OpenCV_LIB_DIR})
 
 # generate our new executable
