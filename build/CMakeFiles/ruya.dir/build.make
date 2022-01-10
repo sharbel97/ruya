@@ -92,6 +92,8 @@ ruya_EXTERNAL_OBJECTS =
 
 ruya: CMakeFiles/ruya.dir/main.cpp.o
 ruya: CMakeFiles/ruya.dir/build.make
+ruya: /usr/local/lib/libglut.3.11.0.dylib
+ruya: /usr/local/lib/libGLEW.2.2.0.dylib
 ruya: /usr/local/lib/libopencv_gapi.4.5.4.dylib
 ruya: /usr/local/lib/libopencv_stitching.4.5.4.dylib
 ruya: /usr/local/lib/libopencv_alphamat.4.5.4.dylib
@@ -128,6 +130,11 @@ ruya: /usr/local/lib/libopencv_wechat_qrcode.4.5.4.dylib
 ruya: /usr/local/lib/libopencv_xfeatures2d.4.5.4.dylib
 ruya: /usr/local/lib/libopencv_xobjdetect.4.5.4.dylib
 ruya: /usr/local/lib/libopencv_xphoto.4.5.4.dylib
+ruya: /usr/local/opt/mesa/lib/libGL.dylib
+ruya: /usr/local/lib/libX11.dylib
+ruya: /usr/local/lib/libXrandr.dylib
+ruya: /usr/local/lib/libXxf86vm.dylib
+ruya: /usr/local/lib/libXi.dylib
 ruya: /usr/local/lib/libopencv_shape.4.5.4.dylib
 ruya: /usr/local/lib/libopencv_highgui.4.5.4.dylib
 ruya: /usr/local/lib/libopencv_datasets.4.5.4.dylib

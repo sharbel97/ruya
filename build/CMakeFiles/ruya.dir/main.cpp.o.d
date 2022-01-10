@@ -355,4 +355,11 @@ CMakeFiles/ruya.dir/main.cpp.o: \
   /usr/local/Cellar/opencv/4.5.4_2/include/opencv4/opencv2/stitching/detail/blenders.hpp \
   /usr/local/Cellar/opencv/4.5.4_2/include/opencv4/opencv2/video.hpp \
   /usr/local/Cellar/opencv/4.5.4_2/include/opencv4/opencv2/video/tracking.hpp \
-  /usr/local/Cellar/opencv/4.5.4_2/include/opencv4/opencv2/video/background_segm.hpp
+  /usr/local/Cellar/opencv/4.5.4_2/include/opencv4/opencv2/video/background_segm.hpp \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks/GLUT.framework/Headers/glut.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks/OpenGL.framework/Headers/OpenGLAvailability.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/os/availability.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gl.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gltypes.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks/OpenGL.framework/Headers/glext.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks/OpenGL.framework/Headers/glu.h

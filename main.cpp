@@ -8,78 +8,105 @@
 #include <iostream>
 #include <string>
 #include <sstream>
-using namespace std;
 
-
-// OpenCV includes
 #include <opencv2/opencv.hpp>
 #include <opencv2/highgui.hpp>
+
+#include <GLUT/glut.h>
+
+using namespace std;
 using namespace cv;
 
-int blurAmount = 15;
-
-// Trackbar callback function
-static void onChange(int pos, void* userInput);
-
-// Mouse callback
-static void onMouse(int event, int x, int y, int, void* userInput);
 
 Mat frame;
+GLfloat angle = 0.0;
+GLuint texture;
+VideoCapture camera;
 
-// GLfloat num = 0.0;
+int loadTexture() {
+    if (frame.data==NULL) return -1;
+    glBindTexture(GL_TEXTURE_2D, texture);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
+
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, frame.cols, frame.rows, 0, GL_BGR, GL_UNSIGNED_BYTE, frame.data);
+    return 0;
+}
+
+void on_opengl(void* param) {
+    glLoadIdentity();
+
+    // Load frame texture
+    glBindTexture(GL_TEXTURE_2D, texture);
+
+    // Rotate plane before draw
+    glRotatef(angle, 1.0f, 1.0f, 1.0f);
+
+    // Create the plane and set the texture coordinates
+    glBegin(GL_QUADS);
+        // first point and coordinate texture
+    glVertex2d(-1.0,-1.0);
+    glTexCoord2d(0.0, 0.0);
+
+        // second point and coordinate texture
+    glTexCoord2d(1.0,0.0);
+    glVertex2d(+1.0,-1.0);
+
+    // third point and coordinate texture
+    glTexCoord2d(1.0, 1.0);
+    glVertex2d(+1.0,+1.0);
+
+    // last point and coordinate texture
+    glTexCoord2d(0.0,1.0);
+    glVertex2d(-1.0,+1.0);
+    glEnd();
+
+}
 
 int main(int argc, const char * argv[]) {
-    cout << "Hello, World!\n";
     cout << getBuildInformation();
 
+    camera.open(0);
+    if (!camera.isOpened()) return -1;
+    namedWindow("OpenGL Camera", WINDOW_OPENGL);
 
-    // Read images
-    frame = imread("../car.jpg");
-    if (!frame.data) {
-        cout << "Image is missing!" << endl;
-        return -1;
+    glEnable(GL_TEXTURE_2D);
+    glGenTextures(1, &texture);
+    setOpenGlDrawCallback("OpenGL Camera", on_opengl);
+    while (waitKey(30)!='q') {
+        camera >> frame;
+        // create first textures
+        loadTexture();
+        updateWindow("OpenGL Camera");
+        angle+=4;
     }
-
-    namedWindow("Blur");
-
-    // Create window
-    createTrackbar("Blur", "Blur", &blurAmount, 30, onChange, &frame);
-
-    setMouseCallback("Blur", onMouse, &frame);
-    onChange(blurAmount, &frame);
-    waitKey(0);
 
     destroyAllWindows();
     return 0;
 }
 
-static void onChange(int pos, void* userInput) {
-    if (pos <= 0) return;
 
-    // Aux variable for result
-    Mat imgBlur;
 
-    // Get the pointer input image
-    Mat* img = (Mat*)userInput;
+// int main(int argc, const char * argv[]) {
+//     cout << getBuildInformation();
 
-    // Apply blur filter
-    blur(*img, imgBlur, Size(pos, pos));
+//     // Read images
+//     frame = imread("../car.jpg");
+//     if (!frame.data) {
+//         cout << "Image is missing!" << endl;
+//         return -1;
+//     }
 
-    // show the result
-    imshow("Blur", imgBlur);
-}
+//     namedWindow("Car");
+//     imshow("Car" , frame);
 
-static void onMouse(int event, int x, int y, int, void* userInput) {
-    if (event != EVENT_LBUTTONDOWN) {
-        return;
-    }
+//     waitKey(0);
+//     destroyAllWindows();
+//     return 0;
+// }
 
-    // Get the pointer input image
-    Mat* img = (Mat*)userInput;
 
-    // Draw circle
-    circle(*img, Point(x, y), 10, Scalar(0,255,0), 3);
 
-    // Call onChange to get blurred image
-    onChange(blurAmount, img);
-}
+
+

@@ -357,8 +357,23 @@ CMakeFiles/ruya.dir/main.cpp.o: ../main.cpp \
   /usr/local/Cellar/opencv/4.5.4_2/include/opencv4/opencv2/stitching/detail/blenders.hpp \
   /usr/local/Cellar/opencv/4.5.4_2/include/opencv4/opencv2/video.hpp \
   /usr/local/Cellar/opencv/4.5.4_2/include/opencv4/opencv2/video/tracking.hpp \
-  /usr/local/Cellar/opencv/4.5.4_2/include/opencv4/opencv2/video/background_segm.hpp
+  /usr/local/Cellar/opencv/4.5.4_2/include/opencv4/opencv2/video/background_segm.hpp \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks/GLUT.framework/Headers/glut.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks/OpenGL.framework/Headers/OpenGLAvailability.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/os/availability.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gl.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gltypes.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks/OpenGL.framework/Headers/glext.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks/OpenGL.framework/Headers/glu.h
 
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks/OpenGL.framework/Headers/glu.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gltypes.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gl.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/os/availability.h:
 
 /usr/local/Cellar/opencv/4.5.4_2/include/opencv4/opencv2/video.hpp:
 
@@ -425,6 +440,8 @@ CMakeFiles/ruya.dir/main.cpp.o: ../main.cpp \
 /usr/local/Cellar/opencv/4.5.4_2/include/opencv4/opencv2/flann/saving.h:
 
 /usr/local/Cellar/opencv/4.5.4_2/include/opencv4/opencv2/flann/any.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks/OpenGL.framework/Headers/OpenGLAvailability.h:
 
 /usr/local/Cellar/opencv/4.5.4_2/include/opencv4/opencv2/stitching/detail/util.hpp:
 
@@ -754,6 +771,8 @@ CMakeFiles/ruya.dir/main.cpp.o: ../main.cpp \
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/machine/_mcontext.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks/GLUT.framework/Headers/glut.h:
+
 /usr/local/Cellar/opencv/4.5.4_2/include/opencv4/opencv2/flann/autotuned_index.h:
 
 /usr/local/Cellar/opencv/4.5.4_2/include/opencv4/opencv2/flann.hpp:
@@ -991,6 +1010,8 @@ CMakeFiles/ruya.dir/main.cpp.o: ../main.cpp \
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__mutex_base:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/sys/_pthread/_pthread_key_t.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks/OpenGL.framework/Headers/glext.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__debug:
 
