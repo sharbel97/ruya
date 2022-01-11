@@ -12,11 +12,10 @@
 #include <opencv2/opencv.hpp>
 #include <opencv2/highgui.hpp>
 
-#include <GLUT/glut.h>
+#include <GL/glut.h>
 
 using namespace std;
 using namespace cv;
-
 
 Mat frame;
 GLfloat angle = 0.0;
@@ -88,6 +87,8 @@ int main(int argc, const char * argv[]) {
 
 
 
+// Basic example code
+
 // int main(int argc, const char * argv[]) {
 //     cout << getBuildInformation();
 
@@ -105,8 +106,4 @@ int main(int argc, const char * argv[]) {
 //     destroyAllWindows();
 //     return 0;
 // }
-
-
-
-
 

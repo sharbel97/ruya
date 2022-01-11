@@ -6,7 +6,7 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-f5ebdc15457944623624.json",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.22.1"
@@ -19,7 +19,7 @@
 					]
 				}
 			],
-			"name" : "",
+			"name" : "Debug",
 			"projects" : 
 			[
 				{
@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ruya::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ruya-8a8faba71f641fdac929.json",
+					"jsonFile" : "target-ruya-Debug-f9df7682001a053fe0f3.json",
 					"name" : "ruya",
 					"projectIndex" : 0
 				}
